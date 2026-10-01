@@ -1,0 +1,17 @@
+{
+  "editor.fontFamily": "VictorMono Nerd Font",
+  "editor.fontSize": 12,
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "VictorMono Nerd Font",
+  "terminal.integrated.fontSize": 10,
+  "code-runner.runInTerminal": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.executorMap": {
+    "python": "uv run python"
+  },
+  "notebook.output.fontFamily": "VictorMono Nerd Font",
+  "notebook.output.fontSize": 12,
+  "notebook.output.scrolling": true,
+  "notebook.output.wordWrap": false,
+  "jupyter.interactiveWindow.textEditor.executeSelection": true
+}
