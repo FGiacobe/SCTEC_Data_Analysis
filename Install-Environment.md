@@ -46,6 +46,17 @@ Abra um novo terminal e confirme a instalação do Git:
 git --version
 ```
 
+### Comandos úteis do Git
+
+```sh
+git init                  # Inicializa um novo repositório Git
+git clone <url>           # Clona um repositório remoto
+git status                # Verifica o status do repositório
+git add .                 # Adiciona todas as alterações ao próximo commit
+git commit -m "mensagem"  # Cria um commit com uma mensagem
+git push                  # Envia as alterações para o repositório remoto
+```
+
 ## Instalar o Visual Studio Code
 
 No Linux, baixe o instalador oficial:
