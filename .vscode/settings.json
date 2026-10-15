@@ -26,5 +26,10 @@
   "notebook.output.scrolling": true,
   "notebook.output.wordWrap": false,
   "jupyter.interactiveWindow.textEditor.executeSelection": true,
-  "jupyter.notebookFileRoot": "${workspaceFolder}"
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "chat.tools.terminal.autoApprove": {
+    "git remote": true,
+    "git submodule": true,
+    "git -C packages/elections": true
+  }
 }
