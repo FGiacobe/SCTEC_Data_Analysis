@@ -5,9 +5,18 @@ requires-python = ">=3.14"
 dependencies = [
     "openpyxl>=3.1.5",
     "pandas>=3.0.6",
+    "rich>=15.0.0",
 ]
 
 [dependency-groups]
 dev = [
     "ipykernel>=7.3.0",
 ]
+
+[tool.uv.workspace]
+members = [
+  "packages/*"
+]
+
+[tool.uv.sources]
+elections = { workspace = true}

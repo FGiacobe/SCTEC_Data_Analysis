@@ -9,9 +9,22 @@
   "code-runner.executorMap": {
     "python": "uv run python"
   },
+  "ruff.enable": true,
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultColorDecorators": "never",
+    "gitlens.codeLens.symbolScopes": [
+      "!Module"
+    ],
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "strict",
   "notebook.output.fontFamily": "VictorMono Nerd Font",
   "notebook.output.fontSize": 12,
   "notebook.output.scrolling": true,
   "notebook.output.wordWrap": false,
-  "jupyter.interactiveWindow.textEditor.executeSelection": true
+  "jupyter.interactiveWindow.textEditor.executeSelection": true,
+  "jupyter.notebookFileRoot": "${workspaceFolder}"
 }
