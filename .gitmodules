@@ -1,0 +1,3 @@
+[submodule "packages/elections"]
+	path = packages/elections
+	url = git@github.com:FGiacobe/SCTEC_Elections.git
