@@ -2,8 +2,19 @@
   "editor.fontFamily": "VictorMono Nerd Font",
   "editor.fontSize": 12,
   "editor.fontLigatures": true,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 120,
   "terminal.integrated.fontFamily": "VictorMono Nerd Font",
   "terminal.integrated.fontSize": 10,
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+    "editor.quickSuggestions": {
+      "comments": "inline",
+      "strings": "inline",
+      "other": "inline"
+    }
+  },
   "code-runner.runInTerminal": true,
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMap": {
