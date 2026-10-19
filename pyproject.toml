@@ -20,3 +20,4 @@ members = [
 
 [tool.uv.sources]
 elections = { workspace = true}
+miniproject = { workspace = true}

@@ -1,3 +1,6 @@
 [submodule "packages/elections"]
 	path = packages/elections
 	url = git@github.com:FGiacobe/SCTEC_Elections.git
+[submodule "packages/miniproject"]
+	path = packages/miniproject
+	url = git@github.com:FGiacobe/SCTEC_MiniProject.git
