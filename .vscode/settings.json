@@ -4,6 +4,24 @@
   "editor.fontLigatures": true,
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 120,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.jj": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/__pycache__": true
+  },
+  "files.watcherExclude": {
+    ".git/objects/**": true,
+    ".git/subtree-cache/**": true,
+    ".hg/store/**": true,
+    "*/.git/objects/**": true,
+    "*/.git/subtree-cache/**": true,
+    "*/.hg/store/**": true,
+    ".venv/**": true
+  },
   "terminal.integrated.fontFamily": "VictorMono Nerd Font",
   "terminal.integrated.fontSize": 10,
   "[markdown]": {
