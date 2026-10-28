@@ -2,67 +2,56 @@
 name = "sctec"
 version = "0.1.0"
 requires-python = ">=3.14"
-dependencies = [
-    "openpyxl>=3.1.5",
-    "pandas>=3.0.6",
-    "rich>=15.0.0",
-]
+dependencies = ["miniproject", "openpyxl>=3.1.5", "pandas>=3.0.6", "rich"]
 
 [dependency-groups]
-dev = [
-    "ipykernel>=7.3.0",
-    "ipywidgets>=8.1.9",
-]
+dev = ["ipykernel", "ipywidgets"]
+
+[tool.uv]
+managed = true
+package = false
 
 [tool.uv.workspace]
-members = [
-  "packages/*"
-]
+members = ["packages/*"]
 
 [tool.uv.sources]
-elections = { workspace = true}
-miniproject = { workspace = true}
+elections = { workspace = true }
+miniproject = { workspace = true }
 
-# Configuration for RUFF formatter
 [tool.ruff]
+line-length = 88
 target-version = "py314"
-fix = false
-fix-only = false
+fix = true
+show-fixes = true
 indent-width = 4
-line-length = 120
-respect-gitignore = true
-src = ["src"]
-extend-exclude = []
-
-[tool.ruff.analyze]
-detect-string-imports = true
-string-imports-min-dots = 2
-
-[tool.ruff.format]
-quote-style = "single"
-indent-style = "space"
-line-ending = "auto"
-skip-magic-trailing-comma = false
-docstring-code-format = true
-docstring-code-line-length = "dynamic"
+exclude = ["venv", ".venv", "env", ".env", "node_modules", "__pycache__"]
 
 [tool.ruff.lint]
-preview = true
-select = ["I", "E", "N", "W", "F", "W", "PL", "PT", "UP", "DOC", "D", "DJ"]
-extend-ignore = ["PLR2004", "PLR6301", "D105", "E501"]
+select = ["ALL"]
+ignore = ["D", "T201", "INP001"]
 
-[tool.ruff.lint.pydocstyle]
-convention = "google"
-ignore-decorators = ["typing.overload"]
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["ANN201", "S101"]
 
-[tool.ruff.lint.pycodestyle]
-ignore-overlong-task-comments = true
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+# line-ending = "lf"
 
-# Configuration for Pylint tool, disable all messages compatible with RUFF
-[tool.pylint.main]
-ignore = ["migrations", "settings.py", "asgi.py", "wsgi.py", "manage.py"]
-load-plugins = ["pylint_django"]
-django-settings-module = "core.settings"
-
-[tool.pylint.messages_control]
-disable = ["C", "R", "W", "E"]
+[tool.pyright]
+typeCheckingMode = "standard"
+pythonVersion = "3.14.7"
+include = ["packages"]
+exclude = [
+    "**/venv",
+    "**/.venv",
+    "**/env",
+    "**/.env",
+    "**/node_modules",
+    "**/__pycache__",
+]
+venv = ".venv"
+venvPath = "."
+executionEnvironments = [{ root = "packages" }]
+reportMissingTypeStubs = true
+stubPath = "stubs"
