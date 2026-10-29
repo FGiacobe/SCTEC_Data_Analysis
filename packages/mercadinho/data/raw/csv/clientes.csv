@@ -1,0 +1,13 @@
+id_cliente,nome,cidade,fidelidade,data_cadastro
+1,Ana Souza,Florianópolis,Sim,2024-03-15
+2,Bruno Lima,Joinville,Não,2024-07-02
+3,Carla Mendes,Florianópolis,Sim,2023-11-20
+4,Diego Alves,Blumenau,Não,2025-01-10
+5,Elisa Rocha,Chapecó,Sim,2025-05-05
+6,Fábio Costa,Joinville,Sim,2024-09-18
+7,Gabriela Nunes,Florianópolis,Não,2023-08-30
+8,Henrique Dias,Criciúma,Sim,2025-02-14
+9,Isabela Prado,Blumenau,Não,2024-12-01
+10,João Pereira,Joinville,Sim,2023-06-12
+11,Karina Martins,Chapecó,Não,2025-08-21
+12,Lucas Ferreira,Criciúma,Sim,2025-09-03

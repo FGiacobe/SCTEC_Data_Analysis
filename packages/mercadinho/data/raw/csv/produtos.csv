@@ -1,0 +1,13 @@
+id_produto,produto,categoria,preco,estoque
+1,Arroz 5kg,Mercearia,28.9,40
+2,Feijão 1kg,Mercearia,8.5,120
+3,Macarrão 500g,Mercearia,5.2,80
+4,Café 500g,Mercearia,18.9,35
+5,Leite 1L,Laticínios,5.8,60
+6,Queijo 500g,Laticínios,24.9,18
+7,Iogurte 170g,Laticínios,3.5,90
+8,Refrigerante 2L,Bebidas,9.9,70
+9,Suco 1L,Bebidas,7.4,45
+10,Sabão em pó 1kg,Limpeza,14.9,30
+11,Detergente 500ml,Limpeza,2.8,150
+12,Shampoo 350ml,Higiene,12.5,25
